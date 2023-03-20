@@ -51,14 +51,13 @@ export const makeVDataTableProps = propsFactory({
   width: [String, Number],
   fixedHeader: Boolean,
   fixedFooter: Boolean,
+  search: String,
 }, 'v-data-table')
 
 export const VDataTable = genericComponent<VDataTableSlots & { colgroup: [] }>()({
   name: 'VDataTable',
 
   props: {
-    search: String,
-
     ...makeVDataTableProps(),
     ...makeDataTableExpandProps(),
     ...makeDataTableGroupProps(),
