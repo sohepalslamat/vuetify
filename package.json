@@ -88,5 +88,8 @@
   },
   "resolutions": {
     "hookable": "npm:strict-hookable@5.4.3"
+  },
+  "dependencies": {
+    "cypress": "^12.9.0"
   }
 }
